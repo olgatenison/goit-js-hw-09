@@ -3,10 +3,6 @@ const elements = {
   start: document.querySelector('button[data-start]'),
   stop: document.querySelector('button[data-stop]'),
 };
-console.log(elements.body);
-console.log(elements.stop);
-console.log(elements.start);
-
 let intervalId;
 
 //generaite random color
