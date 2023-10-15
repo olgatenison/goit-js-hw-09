@@ -40,8 +40,8 @@ const picker = flatpickr(elements.input, options);
 
 //Обчислення різниці часу
 function lookOutTime() {
-  selectedDate = picker.selectedDate;
-  currentDate = new Date();
+  const selectedDate = picker.selectedDate;
+  const currentDate = new Date();
   const ms = selectedDate - currentDate;
   console.log(ms);
   convertMs(ms);
