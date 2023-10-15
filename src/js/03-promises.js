@@ -9,11 +9,6 @@ const elements = {
   form: document.querySelector('.form'),
 };
 
-console.log(elements.delay);
-console.log(elements.step);
-console.log(elements.amount);
-console.log(elements.btn);
-
 elements.form.addEventListener('submit', evt => {
   evt.preventDefault();
 
@@ -39,6 +34,8 @@ elements.form.addEventListener('submit', evt => {
         );
       });
   }
+  // Очищаємо поля форми
+  elements.form.reset();
 });
 
 function createPromise(position, delay) {
